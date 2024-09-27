@@ -1,0 +1,9 @@
+services:
+  mysql:
+    container_name: university_db
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=university
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3306:3306
